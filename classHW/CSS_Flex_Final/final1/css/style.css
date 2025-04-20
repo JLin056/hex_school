@@ -57,7 +57,7 @@ table {
 
 .item h1 {
     text-align: center;
-    color: green;
+    color: #3f5d45;
     font-size: 80px;
     background: #F0FFF0;
     padding-top: 100px;
@@ -66,7 +66,7 @@ table {
 
 .item h2 {
     padding: 30px;
-    color: green;
+    color: #3f5d45;
     font-weight: bold;
     font-size: 30px;
 }
@@ -80,5 +80,5 @@ table {
 }
 
 .item2 {
-    border-left: 20px solid green;
+    border-left: 20px solid #3f5d45;
 }

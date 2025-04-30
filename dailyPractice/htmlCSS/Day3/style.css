@@ -1,0 +1,128 @@
+/* CSS reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 自訂義 CSS */
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.title {
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    border-radius: 10px 10px 10px 10px;
+}
+.question h3{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.question p {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.answer {
+    border: 3px solid #000;
+    background-color: #F5F5F5;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.answer p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.question-information {
+    display: flex;
+    justify-content: space-around;
+}
+.tips {
+    width: 40%;
+}
+.tips h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.tips p{
+    font-size: 16px;
+    text-wrap: wrap;
+    color: gray;
+}
+/* Codepen 題目 */
+.text {
+    font-size: 16px;
+    line-height: 24px;
+}
+  
+.box1 {
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 30px;
+    width: 300px;
+    padding: 16px;
+}    
+.box2 {
+    background-color: #5e9eff;
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 16px;
+    margin-bottom: 30px;
+    border: 3px solid #000000;
+  }

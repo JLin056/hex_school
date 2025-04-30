@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>切版 每日任務 Day3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="title">
+            <h1>🏅 切版任務 Day3 - box-sizing</h1>
+        </div>
+        <div class="question">
+            <h3>練習：請觀看此 <a target="_blank" href="https://codepen.io/hexschool/pen/yLvWLZY">CodePen</a> 計算 .box1 與 .box2 的寬高（請不要用開發人員工具觀看）</h3>
+            <p>題目一：</p>
+            <div class="question-information">
+                <div class="box1">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quia praesentium beatae velit?</p>
+                </div>
+                <div class="tips">
+                    <h3>content-box</h3>
+                    <p>
+                        此為 box-sizing 屬性的預設值，width(寬)、height(高) 只包括內容本身的寬高，不包括 border、padding。<br>
+                        舉例：<br>
+                        當有一個 box 設定 width: 30px; height: 20px; border: 10px solid black;，
+                        則此 box 總寬高：寬度: 50px, 高度: 40px
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="answer">
+            <p>寬：300 + 16*2 + 3*2 = 338px</p>
+            <p>高：24*3 + 16*2 + 3*2 = 110px</p>
+        </div>
+        <div class="question">
+            <p>題目二：</p>
+            <div class="question-information">
+                <div class="box2">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quia praesentium beatae velit?</p>
+                </div>
+                <div class="tips">
+                    <h3>border-box</h3>
+                    <p>
+                        width(寬)、height(高) 除了內容本身的寬高，還包括 border、padding<br>
+                        舉例：<br>
+                        當有一個 box 設定 width: 30px; height: 20px; border: 10px solid black; box-sizing: border-box;，
+                        則此 box 總寬高：寬度: 30px, 高度: 20px
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="answer">
+            <p>寬：300px</p>
+            <p>高：24*3 + 16*2 + 3*2 = 110px</p>
+        </div>
+    </div>
+</body>
+</html>

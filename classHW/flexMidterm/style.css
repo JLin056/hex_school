@@ -1,0 +1,125 @@
+/* CSS reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 自定義 CSS */
+.wrap {
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: "Noto Sans TC", sans-serif;
+}
+*, *::before, *::after{
+    box-sizing: border-box; /* 不用去算 padding, margin */
+}
+
+/* card */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 24px;
+    padding: 40px 0;
+}
+.card li {
+    width: 416px;
+}
+.card .card-img { 
+    max-width: 100%;
+	height: auto;
+    vertical-align: middle;
+    margin-bottom: 16px;
+}
+.card .card-time {
+    display: block;
+    margin-bottom: 4px;
+}
+.card .hash {
+    display: flex;
+    gap: 8px;
+}
+.card .hashtag{
+    font-size: 24px;
+    color: #0027D5;
+    text-decoration: none;
+}
+.card .popular{
+    display: inline-block;
+    border-radius: 40px;
+    padding: 6px 12px;
+    background: #0027D5;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+.card .card-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.card .card-text {
+    font-size: 16px;
+    color: #4B4B4B;
+    margin-bottom: 16px;    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 只顯示 2 行*/
+    overflow: hidden;
+}
+
+.card .see-detail {
+    display: inline-block; 
+    color: #4B4B4B;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+

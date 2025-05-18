@@ -81,7 +81,14 @@ table {
     padding-left: 24px;
     font-size: 16px;
     margin-bottom: 24px;
+    gap: 8px;
 }
 .container .highlight{
     color: #0027D5;
+}
+@media (max-width: 768px) {
+    .wrap {
+        padding:0 12px;
+    }
+
 }

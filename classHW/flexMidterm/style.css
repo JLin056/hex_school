@@ -49,14 +49,15 @@ table {
 }
 
 /* 自定義 CSS */
+*, *::before, *::after{
+    box-sizing: border-box; /* 不用去算 padding, margin */
+}
+
 .wrap {
     margin: 0 auto;
     line-height: 1.5;
     font-weight: 500;
     font-family: "Noto Sans TC", sans-serif;
-}
-*, *::before, *::after{
-    box-sizing: border-box; /* 不用去算 padding, margin */
 }
 
 /* card */
@@ -73,7 +74,7 @@ table {
 .card .card-img { 
     max-width: 100%;
 	height: auto;
-    vertical-align: middle;
+    vertical-align: middle; /* 中間對齊 */
     margin-bottom: 16px;
 }
 .card .card-time {
@@ -81,7 +82,7 @@ table {
     margin-bottom: 4px;
 }
 .card .hash {
-    display: flex;
+    display: flex; 
     gap: 8px;
 }
 .card .hashtag{

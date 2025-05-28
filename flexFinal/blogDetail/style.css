@@ -1,0 +1,287 @@
+/* CSS reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 自定義 CSS */
+*, *::before, *::after{
+    box-sizing: border-box; /* 不用去算 padding, margin */
+}
+body {
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: "Noto Sans TC", sans-serif;
+}
+/* header */
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 24px 80px;
+    gap: 40px;
+}
+.nav a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: #6C757D;
+}
+/* banner */
+.banner {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #6C757D;
+    border-top: 1px solid #6C757D;
+}
+/* banner 圖片 */
+.banner-img {
+    width: 50%;
+}
+.banner-img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* banner 文字 */
+.banner-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-info time {
+    font-size: 16px;
+}
+.banner-info-genre {
+    display: flex;
+    gap: 8px;
+}
+.banner-info-genre p {
+    font-size: 24px;
+    color: #0027D5;
+}
+.banner-info-genre span {
+    font-size: 16px;
+    border-radius: 40px;
+    color: #FFFFFF;
+    background-color: #0027D5;
+    padding: 6px 12px;
+}
+.banner-info h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+/* banner - iPad 樣式 */
+@media (max-width: 767px) {
+    .banner {
+        flex-direction: column;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .banner-info {
+        width: 100%;
+        padding: 48px 12px;
+    }
+    .banner-info-genre {
+        flex-wrap: wrap;
+    }
+}
+/* 內文 */
+.wrap {
+    max-width: 636px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+@media (max-width: 767px){
+    .wrap {
+        margin: 64px 12px;
+    }
+}
+/* 前言 */
+.preface {
+    margin-top: 80px;
+    margin-bottom: 48px;
+}
+.preface h2 {
+    font-size: 28px;
+    color: #0027D5;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.preface p{
+    font-size: 16px;
+}
+/* 介紹文 */
+.introduction {
+    margin-bottom: 48px;
+}
+.introduction img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+.introduction h2{
+    color: #0027D5;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.introduction-content {
+    margin-bottom: 24px;
+}
+.introduction-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.introduction-content-text p {
+    font-size: 16pxpx;
+    margin-bottom: 8px;
+}
+.introduction-content-list p{
+    font-size: 16px;
+}
+.introduction-content-list span{
+    color: #0027D5;
+}
+/* 介紹文 - 小結 */
+.introduction-note {
+    background-color: #EDEDED;
+    border-radius: 24px;
+    padding: 24px;
+}
+.introduction-note p {
+    font-size: 16px;
+    font-weight: 700;
+}
+/* 介紹文 - order list */
+.introduction-content-order-list {
+    list-style: decimal;
+    margin-left: 1.5em;
+}
+/* 介紹文 - unorder list */
+.introduction-content-unorder-list {
+    list-style: disc;
+    margin-left: 1.5em;
+}
+.introduction-content-unorder-list span {
+    color: #0027D5;
+}
+/* 介紹文 - tip */
+.introduction-tip {
+    background-color: #EDEDED;
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+/* 圖片 */
+
+/* 結語 */
+.introduction-content span {
+    color: #0027D5;
+    text-decoration: underline;
+}
+/* 結語 - note  */
+.introduction-conclusion {
+    background-color: #EDEDED;
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+/* 上一篇、下一篇 botton */
+.nav-botton {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-botton a {
+    border: solid 1px;
+    border-radius: 40px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #4B4B4B;
+    font-size: 16px;
+}
+.nav-botton a:hover{
+    text-decoration: underline;
+}
+/* footer - 聯絡資訊 */
+.footer {
+    max-width: 100%;
+}
+.footer-contact-info {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FBFBFB;
+}
+.footer-contact-info-email a{
+    font-size: 32px;
+    text-decoration: none;
+    color: #000000;
+}
+.footer-contact-info-media {
+    display: flex;
+    gap: 4px;
+}
+.footer-contact-info-media a {
+    display: block;
+}
+/* footer - iPad 樣式 */
+@media (max-width: 767px) {
+    .footer-contact-info {
+        display: none;
+    }
+}
+/* footer - 底下簽名 */
+.copyright {
+    font-size: 16px;
+    text-align: center;
+}

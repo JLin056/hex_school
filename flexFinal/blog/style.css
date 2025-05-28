@@ -1,0 +1,385 @@
+/* CSS reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 自定義 CSS */
+*, *::before, *::after{
+    box-sizing: border-box; /* 不用去算 padding, margin */
+}
+body {
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: "Noto Sans TC", sans-serif;
+    background-color: #FBFBFB;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* header */
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 24px 80px;
+    gap: 40px;
+}
+.nav a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: #6C757D;
+}
+/* banner title */
+.banner {
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+.banner-img {
+    width: 50%;
+}
+.banner-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+    gap: 12px;
+}
+.banner-info h1 {
+    color: #0027D5;
+    font-size: 120px;
+    font-weight: 900;
+    /* margin-bottom: 12px; */
+}
+.banner-info h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0027D5;
+}
+/* banner title - iPhone 樣式 */
+@media (max-width: 767px) {
+    .banner {
+        flex-wrap: wrap;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .banner-info {
+        width: 100%;
+        padding: 24px;
+    }
+    .banner-info h1 {
+        font-size: 52px;
+    }
+}
+/* banner - 自學前端不用怕：從零開始的三大關鍵 */
+.banner-card {
+    display: flex;
+    border-bottom: 1px solid #000;
+    gap: 24px;
+}
+.banner-card-img {
+    width: 50%;
+}
+.banner-card-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-card-info-text {
+    width: 67%;
+}
+.banner-card-info-text time {
+    margin-bottom: 4px;
+}
+.banner-info-genre {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.banner-card-info-text .banner-info-genre p {
+    font-size: 24px;
+    color: #0027D5;
+}
+.banner-card-info-text .banner-info-genre span {
+    display: inline-block;
+    border-radius: 40px;
+    color: #FFFFFF;
+    background-color: #0027D5;
+    padding: 6px 12px;
+    font-weight: 700;
+}
+.banner-card-info-text h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.banner-card-info-text .content {
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 只顯示 2 行*/
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.banner-card-info-text a {
+    display: inline-block; 
+    color: #4B4B4B;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding: 8px 16px;
+    color: #4B4B4B;
+    text-decoration: none;
+}
+.banner-card-info-text a:hover{
+    background-color: #ccc;
+}
+/* banner - 自學前端不用怕：從零開始的三大關鍵 - iPhone 樣式 */
+@media (max-width: 767px){
+    .banner-card {
+        flex-wrap: wrap;
+    }
+    .banner-card-img {
+        width: 100%;
+    }
+    .banner-card-info {
+        width: 100%;
+        padding: 48px 12px;
+    }
+    .banner-card-info-text {
+        width: 100%;
+    }
+}
+/* 內文 */
+.wrap {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+/* 搜尋列表 */
+.input-with-icon {
+    padding-top: 80px;
+    position: relative;
+    width: 280px;
+    margin-bottom: 20px;
+}
+.input-with-icon .bi-search {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(105%);
+    color: #666;
+    font-size: 16px;
+}
+.input-with-icon input {
+    width: 100%;
+    padding: 10px 12px 10px 38px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.input-with-icon input:focus {
+    border-color: #007bff;
+}
+/* 搜尋列表 - iPhone 樣式 */
+@media (max-width: 767px) {
+    .input-with-icon {
+        width: 100%;
+        padding: 64px 12px 0 12px;
+    }
+    .input-with-icon .bi-search {
+        left: 28px;
+        transform: translateY(70%);
+    }
+}
+/* 卡片 */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 24px;
+    padding: 40px 0;
+}
+.card li {
+    width: 32%;
+}
+.card img {
+    margin-bottom: 16px;
+}
+.card time {
+    margin-bottom: 4px;
+}
+.hash {
+    display: flex;
+    gap: 8px;
+}
+.card .hash a{
+    font-size: 24px;
+    color: #0027D5;
+    text-decoration: none;
+}
+.card .hash span {
+    display: inline-block;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 40px;
+    background-color: #0027D5;
+    padding: 6px 12px;
+}
+.card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.card p {
+    color: #4B4B4B;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 只顯示 2 行*/
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.card .see-detail {
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 40px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #4B4B4B;
+}
+.card .see-detail:hover {
+    background-color: #ccc;
+}
+/* 卡片 - iPhone 樣式 */
+@media (max-width: 767px) {
+    .card {
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 32px;
+    }
+    .card li {
+        width: 100%;
+    }
+}
+/* 頁數列表 */
+.page {
+    display: flex;
+    justify-content: center;
+}
+.page-list{
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    margin-bottom: 80px;
+    background-color: #FFFFFF;
+    width: 21%;
+    padding: 8px 20px;
+    gap: 10px;
+}
+.page-list li {
+    width: 3%;
+    margin: 8px;
+    border-radius: 40px;
+}
+.page-list a {
+    text-decoration: none;
+    color: #4B4B4B;
+}
+.page-list .current-page {
+    color: #0027D5;
+}
+/* 頁數列表 - iPhone 樣式 */
+@media (max-width: 767px) {
+    .page-list {
+        width: 90%;
+    }
+}
+/* footer - 聯絡資訊 */
+.footer {
+    max-width: 100%;
+    border-top: 1px solid #000;
+}
+.footer-contact-info {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FBFBFB;
+}
+.footer-contact-info-email a{
+    font-size: 32px;
+    text-decoration: none;
+    color: #000000;
+}
+.footer-contact-info-media {
+    display: flex;
+    gap: 4px;
+}
+.footer-contact-info-media a {
+    display: block;
+}
+/* footer - iPad 樣式 */
+@media (max-width: 767px) {
+    .footer-contact-info {
+        display: none;
+    }
+}
+/* footer - 底下簽名 */
+.copyright {
+    font-size: 16px;
+    padding: 24px;
+    text-align: center;
+    background-color: #FFFFFF;
+}

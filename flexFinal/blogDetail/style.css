@@ -118,7 +118,7 @@ body {
     font-size: 28px;
     font-weight: 700;
 }
-/* banner - iPad 樣式 */
+/* banner - iPhone 樣式 */
 @media (max-width: 767px) {
     .banner {
         flex-direction: column;
@@ -140,6 +140,7 @@ body {
     margin: 0 auto;
     margin-bottom: 80px;
 }
+/* 內文 - iPhone 樣式 */
 @media (max-width: 767px){
     .wrap {
         margin: 64px 12px;
@@ -274,7 +275,7 @@ body {
 .footer-contact-info-media a {
     display: block;
 }
-/* footer - iPad 樣式 */
+/* footer - iPhone 樣式 */
 @media (max-width: 767px) {
     .footer-contact-info {
         display: none;
@@ -283,5 +284,6 @@ body {
 /* footer - 底下簽名 */
 .copyright {
     font-size: 16px;
+    padding: 24px;
     text-align: center;
 }

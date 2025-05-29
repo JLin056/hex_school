@@ -256,6 +256,7 @@ body {
 /* footer - 聯絡資訊 */
 .footer {
     max-width: 100%;
+    border-top: 1px solid #000;
 }
 .footer-contact-info {
     padding: 80px 0;

@@ -107,6 +107,12 @@ img {
     font-weight: 700;
     color: #0027D5;
 }
+/* banner title - iPad 樣式 */
+@media (max-width: 1200px) {
+    .banner-info h1 {
+        font-size: 52px;
+    }
+}
 /* banner title - iPhone 樣式 */
 @media (max-width: 767px) {
     .banner {
@@ -186,6 +192,12 @@ img {
 }
 .banner-card-info-text a:hover{
     background-color: #ccc;
+}
+/* banner - 自學前端不用怕：從零開始的三大關鍵 - iPhone 樣式 */
+@media (max-width: 1200px){
+    .banner-card-info-text {
+        width: 100%;
+    }
 }
 /* banner - 自學前端不用怕：從零開始的三大關鍵 - iPhone 樣式 */
 @media (max-width: 767px){
@@ -302,6 +314,20 @@ img {
 }
 .card .see-detail:hover {
     background-color: #ccc;
+}
+/* 卡片 - iPad 樣式 */
+@media (max-width: 1200px) {
+    .card {
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 32px;
+    }
+    .card li {
+        width: 45%;
+    }
+    .hash {
+        flex-wrap: wrap;
+    }
 }
 /* 卡片 - iPhone 樣式 */
 @media (max-width: 767px) {
